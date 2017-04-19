@@ -1,9 +1,12 @@
 
 function tests = generic_grader
-% Main function to generate tests and, if necessary, call this function as a unit test.
+%  NOTE:  Change the name of this function, and change the corresponding parameter in 
+%  the runtests() call below.
+%
+%  Main function to generate tests and, if necessary, call this function as a unit test.
 
-% If the dbstack size is 1, the user ran this function directly.  So
-% re-call this function as a unit test.
+%  If the dbstack size is 1, the user ran this function directly.  So
+%  re-call this function as a unit test.
 if length(dbstack) == 1   
     runtests('generic_grader.m');
 else
